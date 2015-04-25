@@ -67,6 +67,7 @@ function asset_path($filename) {
 
 function assets() {
   wp_enqueue_style('sage_css', asset_path('styles/main.css'), false, null);
+  wp_enqueue_style('google_fonts', 'http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Droid+Serif:400,700');
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');

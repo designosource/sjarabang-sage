@@ -2,9 +2,12 @@
   margin-bottom: 2.5em;
 }
 
-.entry-summary {
+.entry-summary,
+.entry-content {
   margin-top: 0.5em;
 }
+
+
 
 /* ENTRY META */
 .entry-meta {
@@ -19,5 +22,35 @@
   .updated {
     font-weight: 500;
     padding: 0 0.2em;
+  }
+}
+
+/* POST NAVIGATION */
+.posts-navigation {
+  margin-bottom: 1em;
+  overflow: hidden;
+
+  .nav-previous {
+    float: left;
+  }
+
+  .nav-next {
+    float: right;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    margin-bottom: 0; // For input.btn
+    font-weight: @btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 1px solid transparent;
+    white-space: nowrap;
+    .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+    .user-select(none);
+    .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
   }
 }

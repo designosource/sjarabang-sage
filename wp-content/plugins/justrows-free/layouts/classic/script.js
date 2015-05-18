@@ -8,6 +8,7 @@ justRowsThemesConfig['classic'] = {
 };
 
 jQuery(document).ready(function($) {
+
 	$('.justrows-theme-classic')
 		.on('mouseenter', '.jr-element', function(){
 			$caption = $(this).children('.jr-caption');

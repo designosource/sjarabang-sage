@@ -116,3 +116,19 @@ a.y:active
 }
 
 
+form#search_form{
+display: block;
+margin-top: 40px;
+text-align: right;
+}
+
+.submit{
+color: #FFF;
+font-variant: small-caps;
+border: solid;
+}
+
+form#search_form input[type="text"] {
+border: solid 1px #ccc;
+}
+

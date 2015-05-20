@@ -1,6 +1,6 @@
 justRowsThemesConfig['classic'] = {
 	'options': {
-			'caption-height-zero' : true,
+			'caption-height-zero' : false,
 			'margin' : 10
 		},
 	'init-callback': false,
@@ -21,15 +21,4 @@ jQuery(document).ready(function($) {
 				400
 			);
 		})
-		.on('mouseleave', '.jr-element', function(){
-			$caption = $(this).children('.jr-caption');
-			$caption.stop().animate(
-				{
-					'height' : 0,
-					'padding-top' : 0,
-					'padding-bottom' : 0
-				},
-				400
-			);
-		});
 });

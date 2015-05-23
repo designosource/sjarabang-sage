@@ -3,14 +3,16 @@
 body > footer
 {
 	background-color: #505C6F;
-	font-family: Ubuntu,Helvetica,Arial,sans-serif;;
 	font-size: 0.8em;
 	color: #F5F5F5;
 	line-height: 0.8em;
 	padding-top: 1em;
-	height: 120px;
 	margin-top: 50px;
 
+}
+
+body > footer p {
+  font-family: Ubuntu,Helvetica,Arial,sans-serif;
 }
 
 body > footer > .container
@@ -51,6 +53,12 @@ a.site:active {
 		    color: ##F5F5F5;
 		}
 
+footer .madeby p {
+  background-color: #424c5b;
+  margin: 1em 0 0;
+  padding: 1em;
+  text-align: center;
+}
 
 div.social
 {
